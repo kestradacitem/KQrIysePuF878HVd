@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_13932681a204ef6e6a97a91d43eeb354 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_13932681a204ef6e6a97a91d43eeb354" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_13932681a204ef6e6a97a91d43eeb354 = L.map(
+                "map_13932681a204ef6e6a97a91d43eeb354",
+                {
+                    center: [12.8797, 121.774],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_156e136b7baf0964b8357c50c8df30d8 = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Esri",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_156e136b7baf0964b8357c50c8df30d8.addTo(map_13932681a204ef6e6a97a91d43eeb354);
+        
+    
+            var circle_marker_7cab71268c532efbeaaa031bf4a11952 = L.circleMarker(
+                [14.5995, 120.9842],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_13932681a204ef6e6a97a91d43eeb354);
+        
+    
+        var popup_7e93e70df9c2b9724de33e4f3870bd9f = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_4a21db880c6597907d9afd15f8bcfba8 = $(`<div id="html_4a21db880c6597907d9afd15f8bcfba8" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 150px;">             <b>Metro Manila (NCR)</b><br>             <hr style="margin: 2px 0;">             <span style="color: #333;">Couriers: [ A ] [ G ] [ J ] [ S ]</span>         </div>         </div>`)[0];
+                popup_7e93e70df9c2b9724de33e4f3870bd9f.setContent(html_4a21db880c6597907d9afd15f8bcfba8);
+            
+        
+
+        circle_marker_7cab71268c532efbeaaa031bf4a11952.bindPopup(popup_7e93e70df9c2b9724de33e4f3870bd9f)
+        ;
+
+        
+    
+    
+            circle_marker_7cab71268c532efbeaaa031bf4a11952.bindTooltip(
+                `<div>
+                     Metro Manila (NCR) - Click to view couriers
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_687d4dc3c58121c6d6938624bfca593a = L.circleMarker(
+                [14.2456, 120.9367],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_13932681a204ef6e6a97a91d43eeb354);
+        
+    
+        var popup_0821ae298e22bf27f22d22e30676369a = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_f84cdcad330e16bdb100f95f489b4753 = $(`<div id="html_f84cdcad330e16bdb100f95f489b4753" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 150px;">             <b>Cavite</b><br>             <hr style="margin: 2px 0;">             <span style="color: #333;">Couriers: [ A ] [ J ] [ S ]</span>         </div>         </div>`)[0];
+                popup_0821ae298e22bf27f22d22e30676369a.setContent(html_f84cdcad330e16bdb100f95f489b4753);
+            
+        
+
+        circle_marker_687d4dc3c58121c6d6938624bfca593a.bindPopup(popup_0821ae298e22bf27f22d22e30676369a)
+        ;
+
+        
+    
+    
+            circle_marker_687d4dc3c58121c6d6938624bfca593a.bindTooltip(
+                `<div>
+                     Cavite - Click to view couriers
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c9012ca0dd0a1e65fc3820d82badb7ed = L.circleMarker(
+                [15.0794, 120.62],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_13932681a204ef6e6a97a91d43eeb354);
+        
+    
+        var popup_d88c3218236e2cf101b67e22e9aa3c48 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_a54b3c30af0827494158e307e5eebddc = $(`<div id="html_a54b3c30af0827494158e307e5eebddc" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 150px;">             <b>Pampanga</b><br>             <hr style="margin: 2px 0;">             <span style="color: #333;">Couriers: [ A ] [ J ] [ S ]</span>         </div>         </div>`)[0];
+                popup_d88c3218236e2cf101b67e22e9aa3c48.setContent(html_a54b3c30af0827494158e307e5eebddc);
+            
+        
+
+        circle_marker_c9012ca0dd0a1e65fc3820d82badb7ed.bindPopup(popup_d88c3218236e2cf101b67e22e9aa3c48)
+        ;
+
+        
+    
+    
+            circle_marker_c9012ca0dd0a1e65fc3820d82badb7ed.bindTooltip(
+                `<div>
+                     Pampanga - Click to view couriers
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6a745765c93bc3401885dbbc846a7000 = L.circleMarker(
+                [20.4485, 121.9708],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_13932681a204ef6e6a97a91d43eeb354);
+        
+    
+        var popup_d6d7d72529e1dcf9a1c9b65aa8c55070 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_543ca482cf6a2be1d36e4a4a5f09dfc6 = $(`<div id="html_543ca482cf6a2be1d36e4a4a5f09dfc6" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 150px;">             <b>Batanes</b><br>             <hr style="margin: 2px 0;">             <span style="color: #333;">Couriers: [ J ] [ S ]</span>         </div>         </div>`)[0];
+                popup_d6d7d72529e1dcf9a1c9b65aa8c55070.setContent(html_543ca482cf6a2be1d36e4a4a5f09dfc6);
+            
+        
+
+        circle_marker_6a745765c93bc3401885dbbc846a7000.bindPopup(popup_d6d7d72529e1dcf9a1c9b65aa8c55070)
+        ;
+
+        
+    
+    
+            circle_marker_6a745765c93bc3401885dbbc846a7000.bindTooltip(
+                `<div>
+                     Batanes - Click to view couriers
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_48e49b524803f6d368b447b4397095fe = L.circleMarker(
+                [9.843, 118.7365],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_13932681a204ef6e6a97a91d43eeb354);
+        
+    
+        var popup_6cf352a3597caac0711578f353306928 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_84db3faefee3d6b2e36ad28a94dbb56c = $(`<div id="html_84db3faefee3d6b2e36ad28a94dbb56c" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 150px;">             <b>Palawan</b><br>             <hr style="margin: 2px 0;">             <span style="color: #333;">Couriers: [ A ] [ J ] [ S ]</span>         </div>         </div>`)[0];
+                popup_6cf352a3597caac0711578f353306928.setContent(html_84db3faefee3d6b2e36ad28a94dbb56c);
+            
+        
+
+        circle_marker_48e49b524803f6d368b447b4397095fe.bindPopup(popup_6cf352a3597caac0711578f353306928)
+        ;
+
+        
+    
+    
+            circle_marker_48e49b524803f6d368b447b4397095fe.bindTooltip(
+                `<div>
+                     Palawan - Click to view couriers
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_39c20f1c2a2da5dc44033fe480afd618 = L.circleMarker(
+                [10.3157, 123.8854],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_13932681a204ef6e6a97a91d43eeb354);
+        
+    
+        var popup_3c18792825afa5418d489d22cddbbe97 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_179f7bd0182e4902d3c18c2b0221d5fe = $(`<div id="html_179f7bd0182e4902d3c18c2b0221d5fe" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 150px;">             <b>Cebu</b><br>             <hr style="margin: 2px 0;">             <span style="color: #333;">Couriers: [ A ] [ J ] [ S ]</span>         </div>         </div>`)[0];
+                popup_3c18792825afa5418d489d22cddbbe97.setContent(html_179f7bd0182e4902d3c18c2b0221d5fe);
+            
+        
+
+        circle_marker_39c20f1c2a2da5dc44033fe480afd618.bindPopup(popup_3c18792825afa5418d489d22cddbbe97)
+        ;
+
+        
+    
+    
+            circle_marker_39c20f1c2a2da5dc44033fe480afd618.bindTooltip(
+                `<div>
+                     Cebu - Click to view couriers
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2b461fd8851011bfddc0300a7ebf12b7 = L.circleMarker(
+                [11.005, 122.5373],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_13932681a204ef6e6a97a91d43eeb354);
+        
+    
+        var popup_915a155985a8c52c730979d50d5a9547 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_08ef50b5019c7fff8c68e9fce8948a22 = $(`<div id="html_08ef50b5019c7fff8c68e9fce8948a22" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 150px;">             <b>Iloilo</b><br>             <hr style="margin: 2px 0;">             <span style="color: #333;">Couriers: [ A ] [ J ] [ S ]</span>         </div>         </div>`)[0];
+                popup_915a155985a8c52c730979d50d5a9547.setContent(html_08ef50b5019c7fff8c68e9fce8948a22);
+            
+        
+
+        circle_marker_2b461fd8851011bfddc0300a7ebf12b7.bindPopup(popup_915a155985a8c52c730979d50d5a9547)
+        ;
+
+        
+    
+    
+            circle_marker_2b461fd8851011bfddc0300a7ebf12b7.bindTooltip(
+                `<div>
+                     Iloilo - Click to view couriers
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c0b129de1b8eaa160f5b5fb23cadeb9d = L.circleMarker(
+                [10.8601, 124.9685],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_13932681a204ef6e6a97a91d43eeb354);
+        
+    
+        var popup_6bf09c53e7e1dd68381c9a0d9d70d2ad = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_fddb1dc342ccf8d104c9f5a96946e007 = $(`<div id="html_fddb1dc342ccf8d104c9f5a96946e007" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 150px;">             <b>Leyte</b><br>             <hr style="margin: 2px 0;">             <span style="color: #333;">Couriers: [ J ] [ S ]</span>         </div>         </div>`)[0];
+                popup_6bf09c53e7e1dd68381c9a0d9d70d2ad.setContent(html_fddb1dc342ccf8d104c9f5a96946e007);
+            
+        
+
+        circle_marker_c0b129de1b8eaa160f5b5fb23cadeb9d.bindPopup(popup_6bf09c53e7e1dd68381c9a0d9d70d2ad)
+        ;
+
+        
+    
+    
+            circle_marker_c0b129de1b8eaa160f5b5fb23cadeb9d.bindTooltip(
+                `<div>
+                     Leyte - Click to view couriers
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_848a91ccd0843b8b403a335f66a43cd7 = L.circleMarker(
+                [6.9214, 125.2244],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_13932681a204ef6e6a97a91d43eeb354);
+        
+    
+        var popup_7d541e1e48eab6f6816b560b859820f0 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_8c260e4c051dee93cb24c3f341593cf7 = $(`<div id="html_8c260e4c051dee93cb24c3f341593cf7" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 150px;">             <b>Davao del Sur</b><br>             <hr style="margin: 2px 0;">             <span style="color: #333;">Couriers: [ A ] [ J ] [ S ]</span>         </div>         </div>`)[0];
+                popup_7d541e1e48eab6f6816b560b859820f0.setContent(html_8c260e4c051dee93cb24c3f341593cf7);
+            
+        
+
+        circle_marker_848a91ccd0843b8b403a335f66a43cd7.bindPopup(popup_7d541e1e48eab6f6816b560b859820f0)
+        ;
+
+        
+    
+    
+            circle_marker_848a91ccd0843b8b403a335f66a43cd7.bindTooltip(
+                `<div>
+                     Davao del Sur - Click to view couriers
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b55f46716d581af85b3d3a878ee63519 = L.circleMarker(
+                [8.4542, 124.6319],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_13932681a204ef6e6a97a91d43eeb354);
+        
+    
+        var popup_860f0d57ebd9b164e46e5339070d6b92 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_c19a5f7cc0ddd1387fb9ca666320404c = $(`<div id="html_c19a5f7cc0ddd1387fb9ca666320404c" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 150px;">             <b>Misamis Oriental</b><br>             <hr style="margin: 2px 0;">             <span style="color: #333;">Couriers: [ A ] [ J ] [ S ]</span>         </div>         </div>`)[0];
+                popup_860f0d57ebd9b164e46e5339070d6b92.setContent(html_c19a5f7cc0ddd1387fb9ca666320404c);
+            
+        
+
+        circle_marker_b55f46716d581af85b3d3a878ee63519.bindPopup(popup_860f0d57ebd9b164e46e5339070d6b92)
+        ;
+
+        
+    
+    
+            circle_marker_b55f46716d581af85b3d3a878ee63519.bindTooltip(
+                `<div>
+                     Misamis Oriental - Click to view couriers
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c795ff7e36a0fdcac474cea98e737633 = L.circleMarker(
+                [5.986, 121.0315],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_13932681a204ef6e6a97a91d43eeb354);
+        
+    
+        var popup_f98d4b2df9f5ebeda005b73420695cca = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_111253223f86ae160e3b030f3de0e91a = $(`<div id="html_111253223f86ae160e3b030f3de0e91a" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 150px;">             <b>Sulu</b><br>             <hr style="margin: 2px 0;">             <span style="color: #333;">Couriers: [ J ] [ S ]</span>         </div>         </div>`)[0];
+                popup_f98d4b2df9f5ebeda005b73420695cca.setContent(html_111253223f86ae160e3b030f3de0e91a);
+            
+        
+
+        circle_marker_c795ff7e36a0fdcac474cea98e737633.bindPopup(popup_f98d4b2df9f5ebeda005b73420695cca)
+        ;
+
+        
+    
+    
+            circle_marker_c795ff7e36a0fdcac474cea98e737633.bindTooltip(
+                `<div>
+                     Sulu - Click to view couriers
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a3b5687e5d3044b7f07d8fae0a7d3f5e = L.circleMarker(
+                [7.2075, 124.2464],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_13932681a204ef6e6a97a91d43eeb354);
+        
+    
+        var popup_9417f7a7bb64f45e93770fcf5c6a70e5 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_5dbae31ec1f51ab1c1e9f65aa4a0e28e = $(`<div id="html_5dbae31ec1f51ab1c1e9f65aa4a0e28e" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 150px;">             <b>Cotabato</b><br>             <hr style="margin: 2px 0;">             <span style="color: #333;">Couriers: [ J ] [ S ]</span>         </div>         </div>`)[0];
+                popup_9417f7a7bb64f45e93770fcf5c6a70e5.setContent(html_5dbae31ec1f51ab1c1e9f65aa4a0e28e);
+            
+        
+
+        circle_marker_a3b5687e5d3044b7f07d8fae0a7d3f5e.bindPopup(popup_9417f7a7bb64f45e93770fcf5c6a70e5)
+        ;
+
+        
+    
+    
+            circle_marker_a3b5687e5d3044b7f07d8fae0a7d3f5e.bindTooltip(
+                `<div>
+                     Cotabato - Click to view couriers
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
